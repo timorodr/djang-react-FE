@@ -2,9 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import 'milligram'
+// import and setup router
+import { Router, RouterProvider } from 'react-router-dom'
+import router from "./router.jsx"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/* Replace with the RouterProvider*/}
+    <RouterProvider router={router}/>
   </React.StrictMode>,
 )
