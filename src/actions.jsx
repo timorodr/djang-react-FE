@@ -28,7 +28,7 @@ export const createAction = async ({ request }) => {
 // Update Action updating a pet from a form submission to 'update/:id
 export const updateAction = async ({request, params}) => {
     // get the form data
-    const formData = request.formData()
+    const formData = await request.formData()
     // get the pet id
     const id = params.id
     // construct the request body
